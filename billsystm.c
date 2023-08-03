@@ -12,7 +12,7 @@ int dalbatti()
 {
 	printf("You selected Dalbatti \n");
 	printf("The prize of one plate is Rs. 150/- \n");
-	printf("\nPlease select your Quantity : \n");
+	printf("\nPlease select your Quantity : ");
 	scanf("%f",&quantity);
 	quantity*=150;
 	printf("Amout = Rs. %.2f/- \n",quantity);
@@ -22,7 +22,7 @@ int pizza()
 {
 	printf("You selected Pizza \n");
 	printf("The prize of one plate is Rs. 250/- \n");
-	printf("\nPlease select your Quantity : \n");
+	printf("\nPlease select your Quantity : ");
 	scanf("%f",&quantity);
 	quantity*=250;
 	printf("Amout = Rs. %.2f/- \n",quantity);
@@ -32,7 +32,7 @@ int burger()
 {
 	printf("You selected Burger \n");
 	printf("The prize of one plate is Rs. 100/- \n");
-	printf("\nPlease select your Quantity : \n");
+	printf("\nPlease select your Quantity : ");
 	scanf("%f",&quantity);
 	quantity*=100;
 	printf("Amout = Rs. %.2f/- \n",quantity);
@@ -63,7 +63,7 @@ int main()
 	{
 	displaymenu();
 	printf("Enter your choice : ");
-	scanf("%d",&choice);
+	scanf(" %d",&choice);
 	switch(choice)
 	{
 		case 1:
